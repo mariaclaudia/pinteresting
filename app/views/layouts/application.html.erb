@@ -12,6 +12,9 @@
 	<!--AGGIUNTA PER MAPPARE RISORSA HEADER -->
 	<%= render 'layouts/header' %>
 	<div class="container">	
+   <% flash.each do |name,msg| %>
+     <%= content_tag :div, msg, class: "alert alert-infox" %>
+    <% end %>
 		<%= yield %>
 	</div>
 </body> 

@@ -9,6 +9,7 @@ gem 'jquery-rails'
 gem 'turbolinks'
 gem 'jbuilder', '~> 1.2'
 gem 'bootstrap-sass', github: 'thomas-mcdonald/bootstrap-sass', branch: '3'
+gem 'devise', '~> 3.1.1'
 
 #Sposto il gem di sqlite da sopra a sotta altrimenti non va bene e lo specifico solo per l'ambiente di tese e demo
 group :development, :test do
