@@ -1,9 +1,10 @@
-<p id="notice"><%= notice %></p>
+ <p id="notice"><%= notice %></p>
 
 <p>
   <strong>Description:</strong>
   <%= @pin.description %>
 </p>
+<%= image_tag @pin.image.url(:medium) %>
 
 <%= link_to 'Edit', edit_pin_path(@pin) %> |
 <%= link_to 'Back', pins_path %>
